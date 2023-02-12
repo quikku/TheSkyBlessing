@@ -40,7 +40,6 @@
     scoreboard players add $SacredTreasureIndex Global 1
     execute store result storage asset:sacred_treasure Item.tag.TSB.UUID int 1 run scoreboard players get $SacredTreasureIndex Global
 # 扱える神のエイリアスを修正する
-    execute if data storage asset:sacred_treasure {CanUsedGod:"ALL"} run data modify storage asset:sacred_treasure CanUsedGod set value ['Flora','Urban','Nyaptov','Wi-ki','Rumor']
 # そのまま入れれるやつ
     data modify storage asset:sacred_treasure Item.id set from storage asset:sacred_treasure BaseItem
     data modify storage asset:sacred_treasure Item.tag.CustomModelData set from storage asset:sacred_treasure ID
@@ -49,7 +48,6 @@
     data modify storage asset:sacred_treasure Item.tag.TSB.Trigger set from storage asset:sacred_treasure Trigger
     data modify storage asset:sacred_treasure Item.tag.TSB.MPCost set from storage asset:sacred_treasure MPCost
     data modify storage asset:sacred_treasure Item.tag.TSB.MPRequire set from storage asset:sacred_treasure MPRequire
-    data modify storage asset:sacred_treasure Item.tag.TSB.CanUsedGod set from storage asset:sacred_treasure CanUsedGod
     data modify storage asset:sacred_treasure Item.tag.TSB.RemainingCount set from storage asset:sacred_treasure RemainingCount
     data modify storage asset:sacred_treasure Item.tag.TSB.RemainingCountMAX set from storage asset:sacred_treasure RemainingCount
     data modify storage asset:sacred_treasure Item.tag.TSB.LocalCooldown set from storage asset:sacred_treasure LocalCooldown

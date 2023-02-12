@@ -27,7 +27,7 @@
 # 7? スペシャル☆クールタイム
     execute if data storage asset:sacred_treasure SpecialCooldown run function asset_manager:sacred_treasure/create/set_special_cooltime
 # 8 使える神
-    function asset_manager:sacred_treasure/create/set_god
+    #function asset_manager:sacred_treasure/create/set_god
 # Lore一括追加
     data modify storage asset:sacred_treasure Item.tag.display.Lore append from block 10000 0 10000 Items[].tag.display.Lore[]
 # リセット

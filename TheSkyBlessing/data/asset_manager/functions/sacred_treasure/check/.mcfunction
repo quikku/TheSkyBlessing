@@ -14,11 +14,11 @@
     tag @s add CanUsed
 # 条件を満たしてなかったらtag削除
     # 信仰による制限
-        function asset_manager:sacred_treasure/check/check_believe
-        execute if entity @s[tag=CheckFailed] unless score @s BelieveLogCD matches 0.. run tellraw @s {"text":"現在の信仰では使えないようだ...","color":"red"}
-        execute if entity @s[tag=CheckFailed] unless score @s BelieveLogCD matches 0.. run scoreboard players set @s BelieveLogCD 100
-        execute if entity @s[tag=CheckFailed] run tag @s remove CanUsed
-        tag @s[tag=CheckFailed] remove CheckFailed
+        #function asset_manager:sacred_treasure/check/check_believe
+        #execute if entity @s[tag=CheckFailed] unless score @s BelieveLogCD matches 0.. run tellraw @s {"text":"現在の信仰では使えないようだ...","color":"red"}
+        #execute if entity @s[tag=CheckFailed] unless score @s BelieveLogCD matches 0.. run scoreboard players set @s BelieveLogCD 100
+        #execute if entity @s[tag=CheckFailed] run tag @s remove CanUsed
+        #tag @s[tag=CheckFailed] remove CheckFailed
     # SpecialCooldownによる制限
         function asset_manager:sacred_treasure/check/check_special_cooldown
         execute if entity @s[tag=CheckFailed] unless score @s SpecialCDLogCD matches 0.. run tellraw @s {"text":"特殊クールダウンが終わっていません。","color":"red"}

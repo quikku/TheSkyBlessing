@@ -62,7 +62,6 @@
     data remove storage asset:sacred_treasure MPCost
     data remove storage asset:sacred_treasure MPRequire
     data remove storage asset:sacred_treasure CostText
-    data remove storage asset:sacred_treasure CanUsedGod
     data remove storage asset:sacred_treasure CustomNBT
     data remove storage asset:sacred_treasure LocalCooldown
     data remove storage asset:sacred_treasure SpecialCooldown
