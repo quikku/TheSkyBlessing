@@ -42,8 +42,7 @@
     function asset_manager:sacred_treasure/tick/player
 # MP回復処理
     function player_manager:mp/regen/check
-# テレポーター処理
-    function asset_manager:teleporter/tick/player
+
 # チーム処理
     function player_manager:set_team_and_per_health
 

@@ -40,16 +40,7 @@
 
 # asset:contextの明示的な全削除
     function asset_manager:common/reset_all_context
-
-# 解呪処理
-    execute as @e[type=armor_stand,tag=CursedTreasure,tag=!DispelledCursedTreasure] at @s run function asset_manager:island/tick/
-
-# スポナー処理部
-    execute as @e[type=snowball,tag=Spawner,tag=!BreakSpawner] at @s if entity @p[distance=..40] run function asset_manager:spawner/tick/
-
-# テレポーター
-    function asset_manager:teleporter/tick/global
-
+    
 # ワールドギミック
     function world_manager:gimmick/
 
