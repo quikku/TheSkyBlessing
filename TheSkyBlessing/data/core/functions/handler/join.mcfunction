@@ -15,3 +15,5 @@
     function player_manager:bonus/update_defense_bonus
 # ロード待ち時間を更新する
     function world_manager:chunk_io_protect/update_load_waiting_time
+# 強制的にエンドに飛ぶよ
+    execute in the_end run tp @s 115 107 2920
