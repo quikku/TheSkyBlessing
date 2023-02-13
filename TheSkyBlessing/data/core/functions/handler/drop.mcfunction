@@ -8,3 +8,5 @@
     tag @s add StrictCheckMainhand
 # Reset
     scoreboard players reset @s DropEvent
+# アイテム捨てたとき帰ってくるように(これで捨てれてた場合知らん)
+    data merge entity @e[type=item,distance=..3,sort=nearest,limit=1] {PickupDelay:0s}
