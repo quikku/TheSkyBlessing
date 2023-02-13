@@ -7,6 +7,6 @@
 # 死亡時タグを削除
     tag @s remove Death
 # 体力を戻すためにSTMHBackUpを戻す
-    scoreboard players set @s STMHBackup 200000
+    #scoreboard players set @s STMHBackup 200000
 # リスポーン時の満腹度調整
-    function player_manager:adjust_hunger/respawn
+    #function player_manager:adjust_hunger/respawn

@@ -5,4 +5,4 @@
 # @within function core:tick/player/
 
 # リスポーン時の満腹度調整
-    function player_manager:adjust_hunger/respawn.delay
+    #function player_manager:adjust_hunger/respawn.delay
