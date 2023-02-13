@@ -42,9 +42,5 @@
     function asset_manager:sacred_treasure/tick/player
 # MP回復処理
     function player_manager:mp/regen/check
-
-# チーム処理
-    function player_manager:set_team_and_per_health
-
 # リセット
     tag @s remove this
